@@ -1,0 +1,131 @@
+/* separate your sass into different files to keep it maintainable!  */
+
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link {
+    -webkit-tap-highlight-color: rgba(17,103,168,0.3);
+}
+
+a:visited {
+  color: #4A7194;
+}
+
+a:hover {
+  color: #1F4F82;
+}
+
+.ns__schools-nav, 
+.onbbcdomain .ns__schools-nav {
+    background-color: #efefef;
+    padding: 16px 16px 40px 16px;
+    margin: 18px 0 16px 0;
+}
+
+.ns__crosshead {
+    margin-top: 2px;
+}
+
+.ns__schools-nav__cta {
+    font-size: 1.0em;
+    font-weight: normal;
+    margin: 18px 0 12px 0;
+}
+
+.ns__input-wrapper {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.ns__search-field {
+    display: inline-block;
+    width: 80%;
+    height: 2.75em;
+    line-height: 1.0em;
+    padding: 0 8px;
+    color: #222;
+    border: solid 1px #ccc;
+}
+.ns__search-field:focus {
+    border: solid 2px #007f7f;
+    outline: 0;
+}
+.ns__search-field::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.ns__button--search {
+    display: inline-block;
+    width: auto;
+    height: 2.75em;
+    line-height: 1.0em;
+    cursor: pointer;
+    background-color: #006666;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 8px;
+    border: none;
+    -webkit-appearance: button;
+}
+.ns__button--search:hover {
+    background-color: #007f7f;
+}
+.ns__button--search:active,
+.ns__button--search:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.ns__postcode-form,
+.ns__name-search-form {
+
+    .ns--disabled {
+        opacity: 0.5;
+        cursor: auto;
+    }
+
+    .ns--disabled:hover {
+        background-color: #006666;
+    }
+}
+
+.ns--hide {
+    display: none;
+}
+
+.ns__error-message {
+    color: #cc0000;
+    margin-bottom: 12px;
+}
+
+.ns__external-link {
+    clear: both;
+    display: block;
+}
+
+@include respondMinMax(360px, false) {
+    .ns__search-field {
+        width: 84%;
+    }
+}
+
+@include respondMinMax(480px, false) {
+    .ns__search-field {
+        width: 88%;
+    }
+}
+
+@include respondMinMax(600px, false) {
+    .ns__search-form-container {
+        width: 50%;
+        float: left;
+    }
+    .ns__search-field {
+        width: 80%;
+    }
+}
